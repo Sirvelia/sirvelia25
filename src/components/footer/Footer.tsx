@@ -66,7 +66,7 @@ export default function Footer() {
                                 <hr className="border-primary-dark" />
 
                                 <div className="flex flex-col gap-1 font-light text-text-light-muted">
-                                    <Link className="hover:underline" href="https://plogins.com" target="_blank">Ploogins</Link>
+                                    <Link className="hover:underline" href="https://ploogins.com" target="_blank">Ploogins</Link>
                                     <Link className="hover:underline" href="https://suggerence.com" target="_blank">Suggerence</Link>
                                 </div>
                             </div>
