@@ -32,8 +32,8 @@ export async function getLastPublishedPosts() {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({ query }),
-        // cache: 'force-cache',
-        // next: { revalidate: 86400 }
+        cache: 'force-cache',
+        next: { revalidate: 86400 }
     });
 
     const { data } = await response.json();
