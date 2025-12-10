@@ -23,7 +23,7 @@ export default function Heading({ title, as = "h1", size = "medium", variant = "
     }
 
     const sizeStyles = {
-        small: "text-2xl md:text-3xl",
+        small: "text-xl md:text-2xl leading-tight",
         medium: "text-3xl md:text-4xl",
         large: "text-4xl md:text-6xl",
     }

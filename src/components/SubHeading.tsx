@@ -3,7 +3,7 @@ import React from "react";
 
 type SubHeadingLevel = "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
-type SubHeadingSize = "small" | "medium" | "large";
+type SubHeadingSize = "xsmall" | "small" | "medium" | "large";
 
 interface SubHeadingProps {
     title: React.ReactNode;
@@ -14,7 +14,7 @@ interface SubHeadingProps {
 }
 
 export default function SubHeading({ title, as = "p", size = "medium", variant = "primary", className }: SubHeadingProps) {
-    const baseStyles = "font-mono font-medium";
+    const baseStyles = "font-mono font-medium flex items-center gap-2";
 
     const variantStyles = {
         primary: "text-primary",
@@ -24,7 +24,8 @@ export default function SubHeading({ title, as = "p", size = "medium", variant =
     }
 
     const sizeStyles = {
-        small: "text-2xl md:text-3xl",
+        xsmall: "text-base md:text-lg",
+        small: "text-xl md:text-2xl",
         medium: "text-3xl md:text-4xl",
         large: "text-4xl md:text-6xl",
     }

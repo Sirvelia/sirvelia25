@@ -15,6 +15,7 @@ import IconLeaf from "@/components/icons/ico--049-leaf";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import RowGrid from "@/components/RowGrid";
 import SubHeading from "@/components/SubHeading";
+import LastPublishedPosts from "./components/LastPublishedPosts";
 
 export default function Home() {
   return (
@@ -118,7 +119,6 @@ export default function Home() {
       </div>
 
       <div className="relative py-12 md:py-24">
-
         <RowGrid>
           <RowGrid.Item>
             <RowGrid.Left>
@@ -144,9 +144,13 @@ export default function Home() {
             </RowGrid.Right>
           </RowGrid.Item>
         </RowGrid>
-
-
       </div>
+
+      <Container className="space-y-8">
+        <Heading title={<>Last published posts</>} as="h2" size="medium" variant="body" className="" hasSlash />
+
+        <LastPublishedPosts />
+      </Container>
     </div>
   )
 }
