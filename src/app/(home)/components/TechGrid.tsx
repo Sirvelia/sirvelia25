@@ -10,7 +10,7 @@ export default function TechGrid() {
         <div>
             <Container className="grid md:grid-cols-3 gap-4 lg:gap-8 items-center px-2 md:px-4 relative">
 
-                <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left" href="/contact">
+                <Card className="col-span-1 text-text-dark md:h-full" href="/contact">
                     <CardContent className="h-full space-y-6 flex flex-col justify-between">
                         <div className="flex-1 space-y-6">
                             <div className="px-6">
@@ -29,7 +29,7 @@ export default function TechGrid() {
                 </Card>
 
 
-                <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left" href="/contact">
+                <Card className="col-span-1 text-text-dark md:h-full" href="/contact">
                     <CardContent className="h-full space-y-6 flex flex-col justify-between">
                         <div className="flex-1 space-y-6">
                             <div className="px-6">
@@ -47,7 +47,7 @@ export default function TechGrid() {
                     </CardContent>
                 </Card>
 
-                <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left" href="/contact">
+                <Card className="col-span-1 text-text-dark md:h-full" href="/contact">
                     <CardContent className="h-full space-y-6 flex flex-col justify-between">
                         <div className="flex-1 space-y-6">
                             <div className="px-6">
@@ -65,7 +65,7 @@ export default function TechGrid() {
                     </CardContent>
                 </Card>
 
-                <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left" href="/contact">
+                <Card className="col-span-1 text-text-dark md:h-full" href="/contact">
                     <CardContent className="h-full space-y-6 flex flex-col justify-between">
                         <div className="flex-1 space-y-6">
                             <div className="px-6">
@@ -83,7 +83,7 @@ export default function TechGrid() {
                     </CardContent>
                 </Card>
 
-                <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left" href="/contact">
+                <Card className="col-span-1 text-text-dark md:h-full" href="/contact">
                     <CardContent className="h-full space-y-6 flex flex-col justify-between">
                         <div className="flex-1 space-y-6">
                             <div className="px-6">
@@ -101,7 +101,7 @@ export default function TechGrid() {
                     </CardContent>
                 </Card>
 
-                <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left" href="/contact">
+                <Card className="col-span-1 text-text-dark md:h-full" href="/contact">
                     <CardContent className="h-full space-y-6 flex flex-col justify-between">
                         <div className="flex-1 space-y-6">
                             <div className="px-6">
