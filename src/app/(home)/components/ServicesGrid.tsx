@@ -11,7 +11,7 @@ export default function ServicesGrid() {
         <div>
             <Container className="grid md:grid-cols-3 gap-4 lg:gap-8 items-center px-2 md:px-4 relative">
 
-                <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left">
+                <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left" href="/service/technology-consulting">
                     <CardContent className="h-full space-y-6 flex flex-col justify-between">
                         <div className="flex-1 space-y-6">
                             <div className="px-6">
@@ -32,14 +32,12 @@ export default function ServicesGrid() {
                         </div>
 
                         <div className="text-end">
-                            <Link href="/service/technology-consulting">
-                                <Button variant="link" size="lg">Let's talk about support <ChevronRightIcon/></Button>
-                            </Link>
+                            <Button variant="link" size="lg">Let's talk about support <ChevronRightIcon /></Button>
                         </div>
                     </CardContent>
                 </Card>
 
-                <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left">
+                <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left" href="/service/product-development">
                     <CardContent className="h-full space-y-6 flex flex-col justify-between">
                         <div className="flex-1 space-y-6">
                             <div className="px-6">
@@ -54,15 +52,13 @@ export default function ServicesGrid() {
                         </div>
 
                         <div className="text-end">
-                            <Link href="/service/product-development">
-                                <Button variant="link" size="lg">Let's talk about products <ChevronRightIcon/></Button>
-                            </Link>
+                            <Button variant="link" size="lg">Let's talk about products <ChevronRightIcon /></Button>
                         </div>
 
                     </CardContent>
                 </Card>
 
-                <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left">
+                <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left" href="/service/process-digitization">
                     <CardContent className="h-full space-y-6 flex flex-col justify-between">
                         <div className="flex-1 space-y-6">
                             <div className="px-6">
@@ -77,9 +73,7 @@ export default function ServicesGrid() {
                         </div>
 
                         <div className="text-end">
-                            <Link href="/service/process-digitization">
-                                <Button variant="link" size="lg">Let's talk about optimization <ChevronRightIcon/></Button>
-                            </Link>
+                            <Button variant="link" size="lg">Let's talk about optimization <ChevronRightIcon /></Button>
                         </div>
                     </CardContent>
                 </Card>
