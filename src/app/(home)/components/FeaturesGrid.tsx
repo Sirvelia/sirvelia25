@@ -1,11 +1,10 @@
-import Container from "../../../components/Container";
 import { Card, CardContent } from "../../../components/ui/card";
 import Image from "next/image";
 
 export default function FeaturesGrid() {
     return (
         <div>
-            <Container className="grid md:grid-cols-3 gap-4 lg:gap-8 items-center px-2 md:px-4 relative">
+            <div className="grid md:grid-cols-3 gap-4 lg:gap-8 items-center">
                 <div className="hidden lg:block absolute top-0 left-0 w-full h-1/2 border-b-2 border-dashed border-accent">
 
                 </div>
@@ -43,7 +42,7 @@ export default function FeaturesGrid() {
                     </CardContent>
                 </Card>
 
-            </Container>
+            </div>
         </div>
     );
 }

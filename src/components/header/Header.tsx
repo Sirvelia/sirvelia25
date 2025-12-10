@@ -49,7 +49,7 @@ export default function Header({ variant = "dark" }: HeaderProps) {
   return (
     <>
       <header className={`${styles.bg} ${styles.text} relative px-2 md:px-6 py-2 md:py-4  font-light`}>
-        <Container className="flex items-center justify-between">
+        <div className="w-7xl max-w-full mx-auto flex items-center justify-between">
           <Link href="/">
             <Image className="w-auto h-5 md:h-auto" src={styles.logo} alt="Logo" width={120} height={29} />
           </Link>
@@ -176,7 +176,7 @@ export default function Header({ variant = "dark" }: HeaderProps) {
 
 
           </div>
-        </Container>
+        </div>
       </header>
     </>
   );

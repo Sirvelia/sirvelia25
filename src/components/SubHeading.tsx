@@ -1,19 +1,19 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-type SubheadingLevel = "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+type SubHeadingLevel = "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
-type SubheadingSize = "small" | "medium" | "large";
+type SubHeadingSize = "small" | "medium" | "large";
 
-interface SubheadingProps {
+interface SubHeadingProps {
     title: React.ReactNode;
-    as?: SubheadingLevel;
-    size?: SubheadingSize;
+    as?: SubHeadingLevel;
+    size?: SubHeadingSize;
     variant?: "primary" | "accent" | "white" | "body";
     className?: string;
 }
 
-export default function Subheading({ title, as = "p", size = "medium", variant = "primary", className }: SubheadingProps) {
+export default function SubHeading({ title, as = "p", size = "medium", variant = "primary", className }: SubHeadingProps) {
     const baseStyles = "font-mono font-medium";
 
     const variantStyles = {

@@ -1,4 +1,3 @@
-import Container from "@/components/Container";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { ChevronRightIcon } from "lucide-react";
@@ -8,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export default function TechGrid() {
     return (
         <div>
-            <Container className="grid md:grid-cols-3 gap-4 lg:gap-8 items-center px-2 md:px-4 relative">
+            <div className="grid md:grid-cols-3 gap-4 lg:gap-8 items-center">
 
                 <Card className="col-span-1 text-text-dark md:h-full" href="/contact">
                     <CardContent className="h-full space-y-6 flex flex-col justify-between">
@@ -118,7 +117,7 @@ export default function TechGrid() {
                         </div>
                     </CardContent>
                 </Card>
-            </Container>
+            </div>
         </div>
     );
 }

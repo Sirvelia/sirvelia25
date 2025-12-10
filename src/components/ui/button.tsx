@@ -12,12 +12,13 @@ const buttonVariants = cva(
         primary: "bg-primary text-white hover:bg-primary-hover",
         primaryLight: "bg-primary-light text-primary hover:bg-primary-light/80",
         primaryDark: "bg-primary-dark text-white hover:bg-primary-dark/80",
-        primaryOutline: "border-2 border-primary text-primary hover:bg-primary/80",
+        primaryOutline: "border-2 border-primary text-primary hover:bg-primary/80 hover:text-white",
 
         accent: "bg-accent text-accent-dark hover:bg-accent/80",
         accentLight: "bg-accent-ultra-light text-accent hover:bg-accent-ultra-light/80",
         accentDark: "bg-accent-semi-dark text-white hover:bg-accent-semi-dark/80",
         accentOutline: "border-2 border-accent text-accent hover:bg-accent/80",
+        white: "bg-white text-foreground hover:bg-white/80 border border-text-muted shadow-sm",
 
         link: "text-primary text-base underline-offset-4 hover:underline",
       },

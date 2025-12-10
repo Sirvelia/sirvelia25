@@ -1,5 +1,4 @@
 import Heading from "@/components/Heading";
-import Container from "../../../components/Container";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
@@ -8,7 +7,7 @@ import { ChevronRightIcon } from "lucide-react";
 export default function ServicesGrid() {
     return (
         <div>
-            <Container className="grid md:grid-cols-3 gap-4 lg:gap-8 items-center px-2 md:px-4 relative">
+            <div className="grid md:grid-cols-3 gap-4 lg:gap-8 items-center">
 
                 <Card className="col-span-1 text-text-dark md:h-full" hasGradient gradientPosition="left" href="/service/technology-consulting">
                     <CardContent className="h-full space-y-6 flex flex-col justify-between">
@@ -76,7 +75,7 @@ export default function ServicesGrid() {
                         </div>
                     </CardContent>
                 </Card>
-            </Container>
+            </div>
         </div>
     );
 }

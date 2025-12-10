@@ -8,12 +8,13 @@ import FeaturesGrid from "@/app/(home)/components/FeaturesGrid";
 import ServicesGrid from "./components/ServicesGrid";
 import TechGrid from "./components/TechGrid";
 import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
-import { ChevronRightIcon } from "lucide-react";
 import VerticalTabs from "@/components/VerticalTabs";
 import IconGlobalCommunication from "@/components/icons/ico--045-global communication";
 import IcoGrowthChart from "@/components/icons/ico--048-growth chart";
 import IconLeaf from "@/components/icons/ico--049-leaf";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import RowGrid from "@/components/RowGrid";
+import SubHeading from "@/components/SubHeading";
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
         <IconsGrid.Icon src="/logos/logo--Laravel.svg" alt="Laravel" />
       </IconsGrid>
 
-      <Container className="relative px-2 md:px-6 py-12 md:py-24 space-y-8">
+      <Container className="space-y-8">
         <div className="max-w-xl mx-auto">
           <Heading title={<>The technology you need, without the limitations that hold you back</>} as="h2" size="medium" variant="body" className="text-center" />
         </div>
@@ -43,7 +44,7 @@ export default function Home() {
         </div>
       </Container>
 
-      <Container className="relative px-2 md:px-6 py-12 md:py-24 space-y-8">
+      <Container className="space-y-8">
         <div className="max-w-2xl">
           <Heading title={<>Three services to make technology work for you</>} as="h2" size="medium" variant="body" className="" hasSlash />
         </div>
@@ -52,7 +53,7 @@ export default function Home() {
 
       </Container>
 
-      <Container className="relative px-2 md:px-6 py-12 md:py-24 space-y-8">
+      <Container className="space-y-8">
         <div className="max-w-2xl mx-auto">
           <Heading title={<>How do we create your solution?</>} as="h2" size="medium" variant="body" className="text-center mb-2" />
           <p className="text-center">We bring your project to life with one or more of these technologies.</p>
@@ -63,7 +64,7 @@ export default function Home() {
       </Container>
 
       <div className="bg-website-background-ultra-dark bg-[url('/textures/bg-pattern--dark.png')] bg-repeat bg-center bg-contain">
-        <Container className="relative px-2 md:px-6 py-12 md:py-24 space-y-8">
+        <Container className="space-y-8">
           <div className="max-w-2xl mx-auto">
             <Heading title={<>Our essential <span className="text-accent">technical pillars</span></>} as="h2" size="medium" variant="white" className="text-center" />
           </div>
@@ -98,7 +99,7 @@ export default function Home() {
                   <IconLeaf width={50} height={50} className="text-accent" />
 
                   <p>Development is complex because the solution must be easy to use, maintain, and evolve.</p>
-                  
+
                   <p>We create clean, agile, and well-documented code to provide you with efficient, high-performance solutions.</p>
                 </div>
               )
@@ -111,10 +112,41 @@ export default function Home() {
               <Button variant="accent" size="lg">Schedule a call</Button>
             </Link>
           </div>
-          
+
 
         </Container>
       </div>
+
+      <div className="relative py-12 md:py-24">
+
+        <RowGrid>
+          <RowGrid.Item>
+            <RowGrid.Left>
+              <div className="md:text-right space-y-2">
+                <SubHeading title="Skin in the game" as="p" size="small" variant="primary" className="" />
+                <Heading title="It's easy to create for others and tell them how to do things from the comfort of your sofa. But the fun part is taking risks." as="p" size="medium" variant="body" className="" />
+              </div>
+            </RowGrid.Left>
+          </RowGrid.Item>
+          <RowGrid.Item>
+            <RowGrid.Right>
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  <p>At Sirvelia, we know what we're talking about (and how complex it is) because we launch our own products and spin-off brands to explore new verticals and experiment with technologies.</p>
+
+                  <p>Do you have a great idea and need a technology partner? Maybe you could be our next partner.</p>
+                </div>
+
+                <Link href="/spin-offs">
+                  <Button variant="primaryOutline" size="lg">I want to see the projects</Button>
+                </Link>
+              </div>
+            </RowGrid.Right>
+          </RowGrid.Item>
+        </RowGrid>
+
+
+      </div>
     </div>
-  );
+  )
 }

@@ -6,7 +6,7 @@ const IcoOpenFolder: React.FC<React.SVGProps<SVGSVGElement>> = ({ className, ...
       className={className}
       {...props}
     >
-<g clip-path="url(#clip0_7664_50208)">
+<g clipPath="url(#clip0_7664_50208)">
 <path d="M16.025 15.9875L15.975 16.0125C15.9938 16.0062 16.0063 16 16.025 15.9875Z" fill="currentColor"/>
 <path d="M16.0062 16.0062C16.0062 16 16 15.9937 15.9937 15.9875L16.0062 16.0187V16.0062Z" fill="currentColor"/>
 <path d="M16.0188 15.9937C16.0063 16 15.9938 16 15.9875 16.0062H16L16.0188 15.9937Z" fill="currentColor"/>

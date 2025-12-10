@@ -15,7 +15,7 @@ export default function Footer() {
 
             <div className="bg-website-background-ultra-dark text-primary-foreground relative px-2 md:px-6 pb-4 md:pb-10 pt-18">
 
-                <Container className="space-y-8">
+                <div className="w-7xl max-w-full mx-auto space-y-8">
 
                     <div className="grid grid-cols-12 gap-4 md:gap-8 md:divide-x divide-primary-dark">
 
@@ -110,7 +110,7 @@ export default function Footer() {
                             &copy; {year} Sirvelia
                         </div>
                     </div>
-                </Container>
+                </div>
             </div>
         </footer>
     );

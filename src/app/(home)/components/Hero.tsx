@@ -1,6 +1,6 @@
 import Heading from "@/components/Heading";
 import HeroComponent from "@/components/Hero";
-import Subheading from "@/components/Subheading";
+import SubHeading from "@/components/SubHeading";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,9 +8,8 @@ import Link from "next/link";
 export default function Hero() {
     return (
         <HeroComponent variant="dark" texture="pattern">
-
             <div className="mb-6">
-                <Subheading title={<>Custom development services</>} as="h1" size="small" variant="accent" className="text-center" />
+                <SubHeading title={<>Custom development services</>} as="h1" size="small" variant="accent" className="text-center" />
                 <Heading title={<>Put the web at the service <br /> of your business</>} as="p" size="large" variant="white" className="text-center" />
             </div>
 
