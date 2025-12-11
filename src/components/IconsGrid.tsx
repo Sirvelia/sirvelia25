@@ -18,13 +18,13 @@ interface IconsGridIconProps {
 function IconsGrid({ className, children }: IconsGridProps) {
     return (
         <div className={cn("bg-primary text-primary-foreground px-2 md:px-6 py-12", className)}>
-            <Container className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center px-2 md:px-4 relative">
+            <div className="relative w-7xl max-w-full mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center px-2 md:px-4 relative">
                 <div className="hidden lg:block absolute top-0 left-0 w-full h-1/2 border-b-2 border-dashed border-primary-hover">
 
                 </div>
                 {children}
 
-            </Container>
+            </div>
         </div>
     );
 }

@@ -50,3 +50,35 @@ export async function getLastPublishedPosts() {
         featuredImage: edge.node.featuredImage?.node
     })) || [];
 }
+
+export async function getBlogPostBySlug(slug: string) {
+    const query = `
+        query BlogPost($slug: ID!) {
+            post(id: $slug, idType: SLUG) {
+                id
+                title
+                slug
+                content
+                featuredImage {
+                    node {
+                        sourceUrl
+                    }
+                }
+            }
+        }
+    `;
+
+    const graphqlEndpoint = process.env.WP_GRAPQL_URL || '';
+    
+    const response = await fetch(graphqlEndpoint, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ query, variables: { slug } }),
+    });
+
+    const { data } = await response.json();
+
+    return data?.post;
+}
