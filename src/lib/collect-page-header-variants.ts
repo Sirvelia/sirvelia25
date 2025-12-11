@@ -34,8 +34,10 @@ const pageExportsRegistry: Record<string, HeaderVariant> = {
   // Add mappings here after importing
   // Example:
   // "/": homeVariant || "dark",
+  "/blog": "white",
   "/blog/*": "white", // Matches all blog posts
   "/service/*": "primary",
+  "/contact": "primary",
 };
 
 /**
