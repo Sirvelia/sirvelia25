@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, TASA_Orbiter, Jersey_20 } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header/Header";
+import HeaderWrapper from "@/components/header/HeaderWrapper";
 import Footer from "@/components/footer/Footer";
 
 const outfit = Outfit({
@@ -41,7 +41,7 @@ export default function RootLayout({
       <body
         className={`${outfit.variable} ${tasaOrbiter.variable} ${jersey20.variable} antialiased flex flex-col min-h-screen`}
       >
-        <Header variant="dark" />
+        <HeaderWrapper />
 
         <main className="flex-1 flex flex-col bg-website-background bg-[url('/textures/bg-pattern.png')] bg-repeat bg-center bg-contain">
           {children}

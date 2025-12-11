@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 interface HeaderDropdownMenuProps {
@@ -18,6 +19,7 @@ export default function HeaderDropdownMenu({
 }: HeaderDropdownMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -34,6 +36,10 @@ export default function HeaderDropdownMenu({
       };
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <div ref={dropdownRef} className={cn("", className)}>

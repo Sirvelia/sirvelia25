@@ -9,7 +9,7 @@ import MenuDropdown from "./MenuDropdown";
 import MobileMenu from "./MobileMenu";
 import Container from "../Container";
 
-type HeaderVariant = "white" | "dark" | "primary";
+export type HeaderVariant = "white" | "dark" | "primary";
 
 interface HeaderProps {
   variant?: HeaderVariant;
@@ -71,7 +71,7 @@ export default function Header({ variant = "dark" }: HeaderProps) {
 
                     <div className="md:border-l border-primary-foreground/20">
                       <Link className="py-6 block h-full w-full group transition-all duration-300 hover:bg-primary-dark/50" href="/service/technology-consulting">
-                        <Image className="w-full h-[200px] object-contain mx-auto" src="/illustrations/04.png" alt="Technology Consulting" width={400} height={200} />
+                        <Image className="w-full h-[200px] object-contain mx-auto" src="/illustrations/14.png" alt="Technology Consulting" width={400} height={200} />
 
                         <div className="p-4">
                           <p className="font-display font-normal text-xl text-center">Technology Consulting</p>

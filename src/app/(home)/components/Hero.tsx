@@ -9,7 +9,7 @@ export default function Hero() {
     return (
         <HeroComponent variant="dark" texture="pattern">
             <div className="mb-6">
-                <SubHeading title={<>Custom development services</>} as="h1" size="small" variant="accent" className="text-center" />
+                <SubHeading title={<>Custom development services</>} as="h1" size="small" variant="accent" className="justify-center" />
                 <Heading title={<>Put the web at the service <br /> of your business</>} as="p" size="large" variant="white" className="text-center" />
             </div>
 
