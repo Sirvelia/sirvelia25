@@ -92,25 +92,25 @@ export default function AboutUs() {
                         {
                             label: "Integration from the ground up",
                             content:
-                            <div className="space-y-4 text-lg md:text-xl">
-                                <p>Solutions do not exist in isolation. We design them with integration with your systems and tools in mind from the outset, to ensure smooth implementation and an operation-focused vision.</p>
-                            </div>,
+                                <div className="space-y-4 text-lg md:text-xl">
+                                    <p>Solutions do not exist in isolation. We design them with integration with your systems and tools in mind from the outset, to ensure smooth implementation and an operation-focused vision.</p>
+                                </div>,
                         },
                         {
                             label: "Scalability as a principle",
                             content:
-                            <div className="space-y-4 text-lg md:text-xl">
-                                <p>Solutions must be aligned with the pace of business growth.</p>
-                                <p>We use modular architectures and cutting-edge technologies for rapid prototyping. They can evolve according to technical needs, with the security of a robust and adaptable infrastructure.</p>
-                            </div>,
+                                <div className="space-y-4 text-lg md:text-xl">
+                                    <p>Solutions must be aligned with the pace of business growth.</p>
+                                    <p>We use modular architectures and cutting-edge technologies for rapid prototyping. They can evolve according to technical needs, with the security of a robust and adaptable infrastructure.</p>
+                                </div>,
                         },
                         {
                             label: "Optimization through simplicity",
                             content:
-                            <div className="space-y-4 text-lg md:text-xl">
-                                <p>Development is complex so that the solution is easy to use, maintain, and evolve.</p>
+                                <div className="space-y-4 text-lg md:text-xl">
+                                    <p>Development is complex so that the solution is easy to use, maintain, and evolve.</p>
                                     <p>We create clean, agile, and well-documented code to give you high-performance solutions.  It facilitates the management of technical teams and user handling.</p>
-                            </div>,
+                                </div>,
                         },
                     ]}
                 />
@@ -118,7 +118,6 @@ export default function AboutUs() {
             </Container>
 
             <Container className="space-y-8">
-
                 <div className="max-w-2xl mx-auto space-y-6">
                     <Heading title={<>We are three minds working together to develop your customized projects</>} as="p" size="medium" variant="body" className="text-center" />
                 </div>
@@ -162,6 +161,39 @@ export default function AboutUs() {
                 </div>
 
             </Container>
+
+            <div className="bg-white border-y border-text-muted">
+                <div className="md:flex justify-around md:divide-x md:divide-text-muted md:divide-dashed">
+
+                    <div className="px-4 md:px-6 w-full md:max-w-md md:ml-auto py-6 md:py-12">
+                        <div className="mb-6">
+                            <Heading title={<>400+</>} as="p" size="medium" variant="primary" className="" />
+                            <Heading title={<>client projects</>} as="p" size="medium" variant="body" className="" />
+                        </div>
+
+                        <p className="text-lg md:text-xl text-text-dark">We have developed custom plugins, platforms, and technological solutions of all kinds to solve a wide range of problems, create new commercial products, and optimize business processes.</p>
+                    </div>
+
+                    <div className="px-4 md:px-6 w-full md:max-w-md py-6 md:py-50">
+                        <div className="mb-6">
+                        <Heading title={<>8</>} as="p" size="medium" variant="primary" className="" />
+                            <Heading title={<>own products</>} as="p" size="medium" variant="body" className="" />
+                        </div>
+
+                        <p className="text-lg md:text-xl text-text-dark mb-4">It's easy to create for others and tell them how to do things from the comfort of your sofa. But the fun part is taking risks.</p>
+                        <p className="text-lg md:text-xl text-text-dark">At Sirvelia, we know how complex it is. We develop our own products and spin-off brands to explore new verticals and experiment with technologies. And since we like to create synergies with interesting companies, sometimes we do so with partners.</p>
+                    </div>
+
+                    <div className="px-4 md:px-6 md:pt-60 w-full md:max-w-md md:mr-auto py-6 md:py-12 md:flex md:flex-col md:justify-end">
+                        <div className="mb-6">
+                            <Heading title={<>10+</>} as="p" size="medium" variant="primary" className="" />
+                            <Heading title={<>sponsorships</>} as="p" size="medium" variant="body" className="" />
+                        </div>
+
+                        <p className="text-lg md:text-xl text-text-dark">We collaborate with the WordPress community by sponsoring WordCamps in Spain and Europe and giving talks at meetups to share some of our secrets.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
