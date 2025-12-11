@@ -42,8 +42,8 @@ export default function VerticalTabs({
                 return {
                     container: "bg-website-background-ultra-light",
                     tabButton: {
-                        active: "bg-primary text-primary-foreground border-primary before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(circle_at_left,#05DAFF_0px,rgba(5,218,255,0)_200px)] before:rounded-xl before:opacity-[15%] shadow-[0_0_0_3px_#EBEEF4]",
-                        inactive: "bg-transparent text-text-dark-muted border-transparent hover:text-text-dark hover:border-text-dark-muted",
+                        active: "bg-white text-foreground border-primary before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(circle_at_left,#05DAFF_0px,rgba(5,218,255,0)_200px)] before:rounded-xl before:opacity-[15%] shadow-[0_0_0_3px_#EBEEF4]",
+                        inactive: "bg-white text-text-dark-muted border-transparent hover:text-text-dark hover:border-text-dark-muted",
                     },
                     tabContent: "text-text-dark",
                 };
@@ -65,7 +65,7 @@ export default function VerticalTabs({
                         key={index}
                         onClick={() => setActiveTab(index)}
                         className={cn(
-                            "cursor-pointer relative px-4 py-3 rounded-lg border transition-all text-left whitespace-nowrap",
+                            "cursor-pointer relative px-4 py-3 rounded-lg border transition-all text-left whitespace-nowrap flex items-center gap-2",
                             "focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-1",
                             activeTab === index
                                 ? styles.tabButton.active
@@ -75,8 +75,8 @@ export default function VerticalTabs({
                         role="tab"
                     >
                         {numbered && (
-                            <span className="font-mono font-semibold mr-2">
-                                {(index + 1).toString().padStart(2, "0")}.
+                            <span className="font-medium mr-2 block h-6 w-6 flex items-center justify-center text-white bg-primary rounded-full text-sm">
+                                {index + 1}
                             </span>
                         )}
                         {tab.label}

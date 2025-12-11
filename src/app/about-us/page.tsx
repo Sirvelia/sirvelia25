@@ -2,6 +2,11 @@ import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
 import IcoWritingTool from "@/components/icons/ico--100-writing tool";
 import { Card, CardContent } from "@/components/ui/card";
+import Container from "@/components/Container";
+import VerticalTabs from "@/components/VerticalTabs";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function AboutUs() {
     return (
@@ -28,7 +33,7 @@ export default function AboutUs() {
                                 <Card hasGradient gradientPosition="right">
                                     <CardContent>
                                         <div>
-                                            <div className="flex mb-12">
+                                            <div className="flex mb-6 md:mb-12">
                                                 <span className="h-8 w-8 flex items-center justify-center text-white bg-primary block rounded-full text-2xl">1</span>
                                             </div>
                                             <p className="text-lg font-bold">We started with WordPress plugins</p>
@@ -40,7 +45,7 @@ export default function AboutUs() {
                                 <Card hasGradient gradientPosition="right">
                                     <CardContent>
                                         <div>
-                                            <div className="flex mb-12">
+                                            <div className="flex mb-6 md:mb-12">
                                                 <span className="h-8 w-8 flex items-center justify-center text-white bg-primary block rounded-full text-2xl">2</span>
                                             </div>
                                             <p className="text-lg font-bold">We got involved in complex web projects</p>
@@ -52,7 +57,7 @@ export default function AboutUs() {
                                 <Card hasGradient gradientPosition="right">
                                     <CardContent>
                                         <div>
-                                            <div className="flex mb-12">
+                                            <div className="flex mb-6 md:mb-12">
                                                 <span className="h-8 w-8 flex items-center justify-center text-white bg-primary block rounded-full text-2xl">3</span>
                                             </div>
                                             <p className="text-lg font-bold">And now we create AI solutions</p>
@@ -72,6 +77,91 @@ export default function AboutUs() {
                 </Card>
 
             </Hero>
+
+            <Container className="space-y-8">
+
+                <div className="max-w-2xl mx-auto space-y-6">
+                    <Heading title={<>We overcome any challenge because we have our own method</>} as="p" size="medium" variant="body" className="text-center" />
+
+                    <Heading title={<>and three unwavering principles</>} as="p" size="small" variant="primary" className="text-center" />
+                </div>
+
+                <VerticalTabs
+                    numbered={true}
+                    tabs={[
+                        {
+                            label: "Integration from the ground up",
+                            content:
+                            <div className="space-y-4 text-lg md:text-xl">
+                                <p>Solutions do not exist in isolation. We design them with integration with your systems and tools in mind from the outset, to ensure smooth implementation and an operation-focused vision.</p>
+                            </div>,
+                        },
+                        {
+                            label: "Scalability as a principle",
+                            content:
+                            <div className="space-y-4 text-lg md:text-xl">
+                                <p>Solutions must be aligned with the pace of business growth.</p>
+                                <p>We use modular architectures and cutting-edge technologies for rapid prototyping. They can evolve according to technical needs, with the security of a robust and adaptable infrastructure.</p>
+                            </div>,
+                        },
+                        {
+                            label: "Optimization through simplicity",
+                            content:
+                            <div className="space-y-4 text-lg md:text-xl">
+                                <p>Development is complex so that the solution is easy to use, maintain, and evolve.</p>
+                                    <p>We create clean, agile, and well-documented code to give you high-performance solutions.  It facilitates the management of technical teams and user handling.</p>
+                            </div>,
+                        },
+                    ]}
+                />
+
+            </Container>
+
+            <Container className="space-y-8">
+
+                <div className="max-w-2xl mx-auto space-y-6">
+                    <Heading title={<>We are three minds working together to develop your customized projects</>} as="p" size="medium" variant="body" className="text-center" />
+                </div>
+
+                <div className="space-y-4">
+                    <Card hasGradient gradientPosition="right">
+                        <CardContent>
+                            <div className="flex flex-wrap items-center justify-between gap-4">
+                                <Image className="rounded" src="/illustrations/amadeu.png" alt="Amadeu Arderiu" width={150} height={150} />
+
+                                <p className="text-xl md:text-2xl">Amadeu Arderiu</p>
+                            </div>
+                        </CardContent>
+                    </Card>
+
+                    <Card hasGradient gradientPosition="right">
+                        <CardContent>
+                            <div className="flex flex-wrap items-center justify-between gap-4">
+                                <Image className="rounded" src="/illustrations/joan.png" alt="Joan Rodas" width={150} height={150} />
+
+                                <p className="text-xl md:text-2xl">Joan Rodas</p>
+                            </div>
+                        </CardContent>
+                    </Card>
+
+                    <Card hasGradient gradientPosition="right">
+                        <CardContent>
+                            <div className="flex flex-wrap items-center justify-between gap-4">
+                                <Image className="rounded" src="/illustrations/albert.png" alt="Albert Tarrés" width={150} height={150} />
+
+                                <p className="text-xl md:text-2xl">Albert Tarrés</p>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </div>
+
+                <div className="flex justify-center">
+                    <Link href="/contact">
+                        <Button variant="primary" size="lg">Schedule a call</Button>
+                    </Link>
+                </div>
+
+            </Container>
         </div>
     );
 }
