@@ -22,7 +22,7 @@ export default function HeroSection({ title, subtitle, description, image, butto
                 <Heading title={subtitle} as="p" size="large" variant="white" className="text-center" />
             </div>
 
-            <Image className="h-[300px] md:h-[400px] w-full object-contain object-center" src={image} alt={title} width={700} height={501} loading="eager" fetchPriority="high" />
+            <Image className="h-[200px] md:h-[400px] w-full object-contain object-center" src={image} alt={title} width={700} height={501} loading="eager" fetchPriority="high" />
 
             <div className="mt-6 max-w-md mx-auto text-center text-text-light-muted mb-4 font-light text-lg">
                 {description}

@@ -86,7 +86,7 @@ export default function Hero({ variant = "dark", className, children, texture = 
                 />
             )}
 
-            <div className="relative max-w-4xl mx-auto flex flex-col items-center justify-center gap-4">
+            <div className="relative max-w-4xl mx-auto flex flex-col items-center justify-center gap-2 md:gap-4">
                 {children}
             </div>
         </div>
