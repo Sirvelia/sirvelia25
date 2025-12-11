@@ -2,10 +2,11 @@
 
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import MenuLink from "./MenuLink";
 import MenuDropdown from "./MenuDropdown";
+import { usePathname } from "next/navigation";
 
 interface MobileMenuProps {
     className?: string;
@@ -23,6 +24,12 @@ export default function MobileMenu({ className, variant }: MobileMenuProps) {
     }
 
     const styles = getVariantStyles(variant);
+
+    const pathname = usePathname();
+
+    useEffect(() => {
+        setIsOpen(false);
+    }, [pathname]);
 
     return (
         <div className={cn("md:hidden", className)}>
