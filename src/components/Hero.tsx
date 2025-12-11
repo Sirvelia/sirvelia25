@@ -81,7 +81,7 @@ export default function Hero({ variant = "dark", className, children, texture = 
                 style={textureStyles[texture]}
             />
 
-            {variant === "dark" && (
+            {variant === "dark" && texture === "pattern" && (
                 <div className="absolute inset-0 opacity-50 bg-radial-[at_40%_40%] from-[#05DAFF]/80 to-[#121621]/0 to-30%"
                 />
             )}
