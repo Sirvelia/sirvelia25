@@ -7,15 +7,14 @@ import { Button } from "@/components/ui/button";
 import FeaturesGrid from "@/app/(home)/components/FeaturesGrid";
 import ServicesGrid from "./components/ServicesGrid";
 import TechGrid from "./components/TechGrid";
-import { Card, CardContent } from "@/components/ui/card";
 import VerticalTabs from "@/components/VerticalTabs";
 import IconGlobalCommunication from "@/components/icons/ico--045-global communication";
 import IcoGrowthChart from "@/components/icons/ico--048-growth chart";
 import IconLeaf from "@/components/icons/ico--049-leaf";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import RowGrid from "@/components/RowGrid";
 import SubHeading from "@/components/SubHeading";
 import LastPublishedPosts from "./components/LastPublishedPosts";
+import TestimonialSlider from "@/components/TestimonialSlider";
 
 export default function Home() {
   return (
@@ -116,6 +115,85 @@ export default function Home() {
 
 
         </Container>
+      </div>
+
+      <div className="py-12 md:py-24">
+        <TestimonialSlider testimonials={[
+          {
+            stars: 5,
+            content: "100% recommended: human quality, easy communication, and absolute professionalism. We've been working with them for six months, and the quality and reliability of their work is unbeatable.",
+            person: {
+              name: "Guillermo Barquero",
+              title: "Founder & CTO @ Zrive",
+              imageUrl: "/testimonials/guillermo-barquero.png",
+            },
+            company: {
+              name: "Zrive",
+              logoUrl: "/testimonials/zrive.svg",
+            }
+          },
+          {
+            stars: 5,
+            content: "We've hired Sirvelia on several occasions for WordPress plugin development, and the results couldn't have been better. They're incredibly easy to work with because they're such great professionals, not only technically but also personally. We'll definitely work with them again whenever we need them. 100% recommended.",
+            person: {
+              name: "Abián R. Zaya",
+              title: "CEO",
+              imageUrl: "/testimonials/abian-zaya.png",
+            },
+            company: {
+              name: "ITGallery",
+              logoUrl: "/testimonials/itgallery.png",
+            }
+          },
+          {
+            stars: 5,
+            content: "Working with Sirvelia is always a pleasure. At GAMMA GROUP, we have worked on a wide variety of projects with them, and all of them have been a success. Their response is quick, personalized, and effective, which makes working with them easy and efficient. At Sirvelia, they don't just do what you ask them to do; they first understand your business and your real needs and then propose the best solution.",
+            person: {
+              name: "Cristina Fernández Freixa",
+              title: "CMO",
+              imageUrl: "/testimonials/cristina-fernandez.jpeg",
+            },
+            company: {
+              name: "GAMMA GROUP",
+              logoUrl: "/testimonials/gamma-group.jpeg",
+            }
+          },
+          {
+            stars: 5,
+            content: "We were looking for versatile developers to strengthen our dev team. We've been successfully collaborating with Sirvelia for more than a year. They've been able to smoothly intervene in our environment and communicate with our international team.",
+            person: {
+              name: "Philippe Tarrare",
+              title: "CEO",
+              imageUrl: "/testimonials/philippe-tarrare.jpeg",
+            },
+            company: {
+              name: "Voodootix",
+              logoUrl: "/testimonials/voodoo.png",
+            }
+          },
+          {
+            stars: 5,
+            content: "Great development team and skilled professionals. Excellent communication and work delivery. We've hired several teams to solve various WordPress optimization issues that we couldn't resolve with other professionals. Recommended.",
+            person: {
+              name: "David Carrasco",
+              title: "SEO & Growth Advisor",
+              imageUrl: "/testimonials/david-carrasco.jpeg",
+            }
+          },
+          {
+            stars: 5,
+            content: "They helped us develop a new, fully customized WordPress website, developing everything completely ad hoc. We now have a fast, self-manageable website with management features developed specifically for our needs, particularly for managing the content and documents for all the products we have on the website, in all languages, and with version control for everything.",
+            person: {
+              name: "Néstor Díaz",
+              title: "Managing Director SPAIN",
+              imageUrl: "/testimonials/nestor-diaz.jpeg",
+            },
+            company: {
+              name: "EKSELANS BY ITS",
+              logoUrl: "/testimonials/ekselans.png",
+            }
+          }
+        ]} />
       </div>
 
       <div className="relative py-12 md:py-24">
