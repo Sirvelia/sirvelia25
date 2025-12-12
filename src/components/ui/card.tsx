@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils"
 
 interface CardProps extends React.ComponentProps<"div"> {
   hasGradient?: boolean
-  gradientPosition?: "left" | "right"
+  gradientPosition?: "left" | "right" | "top" | "bottom"
   isHoverable?: boolean
   href?: string
   variant?: "light" | "dark"
@@ -26,6 +26,8 @@ function Card({ className, hasGradient, gradientPosition, isHoverable, href, var
         isDark && "bg-website-background-ultra-dark text-color-text-light border border-[#2B3550] shadow-[0_0_0_3px_#05DAFF14]",
         hasGradient && gradientPosition === "left" && "before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(circle_at_left,#05DAFF_0px,rgba(5,218,255,0)_200px)] before:rounded-xl before:opacity-[15%]",
         hasGradient && gradientPosition === "right" && "before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(circle_at_right,#05DAFF_0px,rgba(5,218,255,0)_200px)] before:rounded-xl before:opacity-[15%]",
+        hasGradient && gradientPosition === "top" && "before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(circle_at_top,#05DAFF_0px,rgba(5,218,255,0)_200px)] before:rounded-xl before:opacity-[15%]",
+        hasGradient && gradientPosition === "bottom" && "before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(circle_at_bottom,#05DAFF_0px,rgba(5,218,255,0)_200px)] before:rounded-xl before:opacity-[15%]",
         shouldBeHoverable && "hover:border-accent hover:shadow-sm hover:shadow-accent",
         href && "cursor-pointer",
         className

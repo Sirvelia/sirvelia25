@@ -1,5 +1,6 @@
 import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
+import Quote from "@/components/Quote";
 import IcoWritingTool from "@/components/icons/ico--100-writing tool";
 import { Card, CardContent } from "@/components/ui/card";
 import Container from "@/components/Container";
@@ -8,6 +9,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import TestimonialSlider from "@/components/TestimonialSlider";
+import SubHeading from "@/components/SubHeading";
+import ContactForm from "./ConctactForm";
 
 export default function AboutUs() {
     return (
@@ -274,6 +277,20 @@ export default function AboutUs() {
                     </div>
                 </div>
             </div>
+
+            <Container className="space-y-8">
+
+                <div className="max-w-2xl mx-auto space-y-4 mb-16">
+                    <SubHeading title={<>What project are you going to challenge us with?</>} as="p" size="small" variant="primary" className="justify-center" />
+                    <Heading title={<>We have the solution, we just need to hear your idea</>} as="p" size="medium" variant="body" className="text-center" />
+                </div>
+
+                <div className="max-w-xl mx-auto space-y-6">
+                    <Quote avatar="/illustrations/amadeu.png" avatarName="Amadeu Arderiu" quote="Let's talk about your project" />
+                </div>
+
+                <ContactForm />
+            </Container>
         </div>
     );
 }
